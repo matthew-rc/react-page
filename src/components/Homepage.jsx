@@ -59,13 +59,14 @@ const Homepage = () => {
                     </p>
                     <strong>Courses</strong>
                     <ListGroup> 
-                    <ListGroup.Item style={{color: '#28282B'}}>Object Oriented Programming I, II, and III (CS 200, 300, 400)</ListGroup.Item>
+                    <ListGroup.Item>Object Oriented Programming I, II, and III (CS 200, 300, 400)</ListGroup.Item>
                     <ListGroup.Item>Data Science Programming I and II (CS 220, 320)</ListGroup.Item>
                     <ListGroup.Item>Computer Engineering (ECE 252)</ListGroup.Item>
                     <ListGroup.Item>Machine Organization and Programming (CS 354)</ListGroup.Item>
                     <ListGroup.Item>Data Engineering and Machine Learning(ECE 204)</ListGroup.Item>
                     <ListGroup.Item>Designing User Interfaces (CS 571)</ListGroup.Item>
-                    <ListGroup.Item>Introduction to Cryptography (CS 435)</ListGroup.Item>
+                    <ListGroup.Item>Introduction to Human-Computer Interaction (CS 570)</ListGroup.Item>
+                    <ListGroup.Item>Introduction to Algorithms (CS 577)</ListGroup.Item>
                     </ListGroup>
                 </Col>
             </Row>
