@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Button, Card, Col, Container, Image, ListGroup, Nav, Navbar, Row } from "react-bootstrap";
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { Button, Card, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { BrowserRouter, Route, Routes, Link, HashRouter } from 'react-router-dom';
 import Home from './Home'
 import Projects from './Projects';
 import Blog from './Blog';
 import Resume from '../assets/documents/Resume_s23.pdf'
-import headshot from "../assets/_figures/headshot.jfif"
 
 const Homepage = () => {
     return <Container style={{marginTop:'20px'}}>
@@ -13,7 +12,7 @@ const Homepage = () => {
         <h1>Matthew Chang</h1>
         <p>University of Wisconsin-Madison <br/>
             Bachelor of Science in Computer Sciences, minor in Data Science</p>
-        <BrowserRouter basename='/react-page/'>
+        <HashRouter>
             <Navbar style={{marginTop: '-20px', marginBottom: '-15px'}}>
                 <Container>
                     <Nav className='me-auto'>
@@ -36,7 +35,7 @@ const Homepage = () => {
                 <Route path='/blog' element={<Blog/>}/>
                 <Route path="/" element={<Home />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
         <hr style={{marginTop:'15px'}}/>
         </Row>
         <p style={{textAlign: "center"}}>Email: mrchang2@wisc.edu <br/> Mobile: 608-977-2329</p>
